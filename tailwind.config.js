@@ -1,9 +1,7 @@
 module.exports = {
   content: [
     "./index.html",
-    "./feed/index.html",
-    "./profile/index.html",
-    "./src/**/*.{html,js}",
+    "./src/**/*.{html,js}", // Adjust paths to your files
   ],
   theme: {
     extend: {},
