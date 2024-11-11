@@ -1,7 +1,8 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{html,js}", // Adjust paths to your files
+    "./register/index.html", // Add the register page path here
+    "./src/**/*.{html,js}", // Ensure all your HTML and JS files are scanned
   ],
   theme: {
     extend: {},
