@@ -34,7 +34,7 @@ To run the project locally, you'll need the following tools installed:
 1. **Clone the repository** (or download the project files):
 
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/kanotten/JS2-CA-ken/blob/main/README.md>
    cd vibeo
    ```
 
