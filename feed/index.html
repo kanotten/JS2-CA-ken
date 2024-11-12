@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Feed Page</title>
+        <link href="../dist/styles.css" rel="stylesheet" />
+    </head>
+
+    <body class="flex flex-col min-h-screen">
+        <!-- Header / Menu Bar -->
+        <header class="bg-gray-800 text-white p-4 shadow-md">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <h1 class="text-xl font-bold">Vibeo Feed</h1>
+                <nav class="flex items-center space-x-6">
+                    <ul class="flex space-x-6">
+                        <li>
+                            <a
+                                href="#"
+                                class="text-gray-300 hover:text-gray-100 transition-colors duration-200"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-gray-300 hover:text-gray-100 transition-colors duration-200"
+                                >Create post</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-gray-300 hover:text-gray-100 transition-colors duration-200"
+                                >Profile</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-gray-300 hover:text-gray-100 transition-colors duration-200"
+                                >Log out</a
+                            >
+                        </li>
+                    </ul>
+                    <input
+                        type="text"
+                        placeholder="Search..."
+                        class="p-2 bg-gray-700 text-white rounded-md"
+                    />
+                </nav>
+            </div>
+        </header>
+
+        <section
+            class="relative w-full h-96 bg-cover bg-center"
+            style="background-image: url(&quot;../assets/vibeo1.png&quot;)"
+        ></section>
+
+        <!-- Feed Section -->
+        <section class="flex-grow">
+            <div class="max-w-7xl mx-auto my-8 px-4">
+                <div class="text-center text-2xl md:text-3xl font-bold mb-6">
+                    Feed Posts
+                </div>
+
+                <div
+                    class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-4"
+                >
+                    <!-- Post 1 -->
+                    <div
+                        class="relative bg-white flex flex-col justify-between border rounded shadow-md hover:scale-105 hover:shadow-lg hover:opacity-90 transition-all duration-300"
+                    >
+                        <a class="relative" href="#">
+                            <div class="relative w-full aspect-video">
+                                <img
+                                    class="rounded w-full h-full object-cover"
+                                    src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxrZXlib2FyZHxlbnwwfDB8fHwxNjk5NTI1MDAzfDA&ixlib=rb-4.0.3&q=80&w=1080"
+                                    alt="Writey A.I"
+                                    loading="lazy"
+                                />
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-b from-gray-800 to-gray-500 text-white"
+                                >
+                                    <h2 class="text-xl font-semibold">
+                                        Writey A.I
+                                    </h2>
+                                    <p class="font-medium text-sm">
+                                        Most advanced language A.I
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <div
+                            class="flex flex-col justify-between gap-3 px-4 py-2"
+                        >
+                            <p class="text-gray-600 two-lines">
+                                Writey A.I is an AI tool that generates
+                                original, researched blog posts in minutes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Post 2 -->
+                    <div
+                        class="relative bg-white flex flex-col justify-between border rounded shadow-md hover:scale-105 hover:shadow-lg hover:opacity-90 transition-all duration-300"
+                    >
+                        <a class="relative" href="#">
+                            <div class="relative w-full aspect-video">
+                                <img
+                                    class="rounded w-full h-full object-cover"
+                                    src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxrZXlib2FyZHxlbnwwfDB8fHwxNjk5NTI1MDAzfDA&ixlib=rb-4.0.3&q=80&w=1080"
+                                    alt="Writey A.I"
+                                    loading="lazy"
+                                />
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-b from-gray-800 to-gray-500 text-white"
+                                >
+                                    <h2 class="text-xl font-semibold">
+                                        Writey A.I
+                                    </h2>
+                                    <p class="font-medium text-sm">
+                                        Most advanced language A.I
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <div
+                            class="flex flex-col justify-between gap-3 px-4 py-2"
+                        >
+                            <p class="text-gray-600 two-lines">
+                                Writey A.I is an AI tool that generates
+                                original, researched blog posts in minutes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Post 3 -->
+                    <div
+                        class="relative bg-white flex flex-col justify-between border rounded shadow-md hover:scale-105 hover:shadow-lg hover:opacity-90 transition-all duration-300"
+                    >
+                        <a class="relative" href="#">
+                            <div class="relative w-full aspect-video">
+                                <img
+                                    class="rounded w-full h-full object-cover"
+                                    src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxrZXlib2FyZHxlbnwwfDB8fHwxNjk5NTI1MDAzfDA&ixlib=rb-4.0.3&q=80&w=1080"
+                                    alt="Writey A.I"
+                                    loading="lazy"
+                                />
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-b from-gray-800 to-gray-500 text-white"
+                                >
+                                    <h2 class="text-xl font-semibold">
+                                        Writey A.I
+                                    </h2>
+                                    <p class="font-medium text-sm">
+                                        Most advanced language A.I
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <div
+                            class="flex flex-col justify-between gap-3 px-4 py-2"
+                        >
+                            <p class="text-gray-600 two-lines">
+                                Writey A.I is an AI tool that generates
+                                original, researched blog posts in minutes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Post 4 -->
+                    <div
+                        class="relative bg-white flex flex-col justify-between border rounded shadow-md hover:scale-105 hover:shadow-lg hover:opacity-90 transition-all duration-300"
+                    >
+                        <a class="relative" href="#">
+                            <div class="relative w-full aspect-video">
+                                <img
+                                    class="rounded w-full h-full object-cover"
+                                    src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxrZXlib2FyZHxlbnwwfDB8fHwxNjk5NTI1MDAzfDA&ixlib=rb-4.0.3&q=80&w=1080"
+                                    alt="Writey A.I"
+                                    loading="lazy"
+                                />
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-b from-gray-800 to-gray-500 text-white"
+                                >
+                                    <h2 class="text-xl font-semibold">
+                                        Writey A.I
+                                    </h2>
+                                    <p class="font-medium text-sm">
+                                        Most advanced language A.I
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <div
+                            class="flex flex-col justify-between gap-3 px-4 py-2"
+                        >
+                            <p class="text-gray-600 two-lines">
+                                Writey A.I is an AI tool that generates
+                                original, researched blog posts in minutes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Post 5 -->
+                    <div
+                        class="relative bg-white flex flex-col justify-between border rounded shadow-md hover:scale-105 hover:shadow-lg hover:opacity-90 transition-all duration-300"
+                    >
+                        <a class="relative" href="#">
+                            <div class="relative w-full aspect-video">
+                                <img
+                                    class="rounded w-full h-full object-cover"
+                                    src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxrZXlib2FyZHxlbnwwfDB8fHwxNjk5NTI1MDAzfDA&ixlib=rb-4.0.3&q=80&w=1080"
+                                    alt="Writey A.I"
+                                    loading="lazy"
+                                />
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-b from-gray-800 to-gray-500 text-white"
+                                >
+                                    <h2 class="text-xl font-semibold">
+                                        Writey A.I
+                                    </h2>
+                                    <p class="font-medium text-sm">
+                                        Most advanced language A.I
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <div
+                            class="flex flex-col justify-between gap-3 px-4 py-2"
+                        >
+                            <p class="text-gray-600 two-lines">
+                                Writey A.I is an AI tool that generates
+                                original, researched blog posts in minutes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Post 6 -->
+                    <div
+                        class="relative bg-white flex flex-col justify-between border rounded shadow-md hover:scale-105 hover:shadow-lg hover:opacity-90 transition-all duration-300"
+                    >
+                        <a class="relative" href="#">
+                            <div class="relative w-full aspect-video">
+                                <img
+                                    class="rounded w-full h-full object-cover"
+                                    src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxrZXlib2FyZHxlbnwwfDB8fHwxNjk5NTI1MDAzfDA&ixlib=rb-4.0.3&q=80&w=1080"
+                                    alt="Writey A.I"
+                                    loading="lazy"
+                                />
+                                <div
+                                    class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-b from-gray-800 to-gray-500 text-white"
+                                >
+                                    <h2 class="text-xl font-semibold">
+                                        Writey A.I
+                                    </h2>
+                                    <p class="font-medium text-sm">
+                                        Most advanced language A.I
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <div
+                            class="flex flex-col justify-between gap-3 px-4 py-2"
+                        >
+                            <p class="text-gray-600 two-lines">
+                                Writey A.I is an AI tool that generates
+                                original, researched blog posts in minutes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-4">
+            <div class="max-w-7xl mx-auto text-center">
+                <p>&copy; 2024 Vibeo. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
