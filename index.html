@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Login - Vibeo</title>
+        <link href="./dist/styles.css" rel="stylesheet" />
+    </head>
+
+    <body class="bg-gray-100">
+        <main class="max-w-screen-xl mx-auto my-10 flex justify-center">
+            <section
+                class="lg:w-1/2 xl:w-5/12 bg-white shadow sm:rounded-lg p-6 sm:p-12"
+            >
+                <header class="mt-12 text-center">
+                    <h1 class="text-5xl xl:text-4xl font-medium">
+                        Login to Vibeo
+                    </h1>
+                </header>
+
+                <form action="/login" method="POST" class="w-full mt-8">
+                    <fieldset class="mx-auto max-w-xs">
+                        <!-- Email Input -->
+                        <div class="relative mt-6">
+                            <label
+                                for="email"
+                                class="absolute top-0 left-0 text-sm text-gray-800 opacity-75 transform -translate-y-1/2 bg-transparent peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-gray-800"
+                            >
+                                Email Address
+                            </label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Email Address"
+                                class="peer w-full bg-transparent border-b-2 border-gray-300 px-0 py-1 placeholder-transparent focus:border-gray-500 focus:outline-none"
+                                autocomplete="email"
+                                required
+                            />
+                        </div>
+
+                        <!-- Password Input -->
+                        <div class="relative mt-6">
+                            <label
+                                for="password"
+                                class="absolute top-0 left-0 text-sm text-gray-800 opacity-75 transform -translate-y-1/2 bg-transparent peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-gray-800"
+                            >
+                                Password
+                            </label>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                                placeholder="Password"
+                                class="peer w-full bg-transparent border-b-2 border-gray-300 px-0 py-1 placeholder-transparent focus:border-gray-500 focus:outline-none"
+                                required
+                            />
+                        </div>
+
+                        <!-- Submit Button and Forgot Password Link -->
+                        <div class="flex items-center justify-between mt-8">
+                            <button
+                                type="submit"
+                                class="flex items-center justify-center px-8 py-3 text-base font-normal rounded-md text-white bg-red-600 hover:bg-red-700"
+                            >
+                                Log In
+                            </button>
+                            <a href="/forget-password" class="text-red-500">
+                                Forgot Password?
+                            </a>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <!--register option -->
+                <p class="mt-4 text-center">
+                    <a
+                        href="register/index.html"
+                        class="text-red-500 hover:text-red-700"
+                        >Don't have an account? Register</a
+                    >
+                </p>
+
+                <!-- Or Divider -->
+                <div class="flex justify-center items-center w-full mt-4">
+                    <span class="bg-gray-300 h-px flex-grow"></span>
+                    <span
+                        class="uppercase text-md text-gray-900 font-semibold mx-2"
+                        >or</span
+                    >
+                    <span class="bg-gray-300 h-px flex-grow"></span>
+                </div>
+
+                <!-- Social Logins -->
+                <div class="mt-4 w-full flex flex-col items-center gap-3">
+                    <!-- Google Button -->
+                    <button
+                        class="w-full flex items-center justify-start pl-14 bg-white border border-gray-800 rounded-md shadow-sm px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 hover:border-blue-700"
+                    >
+                        <svg
+                            class="h-6 w-6 mr-2"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="-0.5 0 48 48"
+                            version="1.1"
+                        >
+                            <g
+                                id="Icons"
+                                stroke="none"
+                                stroke-width="1"
+                                fill="none"
+                                fill-rule="evenodd"
+                            >
+                                <g
+                                    id="Color-"
+                                    transform="translate(-401.000000, -860.000000)"
+                                >
+                                    <g
+                                        id="Google"
+                                        transform="translate(401.000000, 860.000000)"
+                                    ></g>
+                                </g>
+                            </g>
+                        </svg>
+                        <span>Continue with Google</span>
+                    </button>
+
+                    <!-- Facebook Button -->
+                    <button
+                        class="w-full flex items-center justify-start pl-14 bg-white border border-gray-800 rounded-md shadow-sm px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 hover:border-blue-700"
+                    >
+                        <svg
+                            class="h-6 w-6 mr-2"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 48 48"
+                            version="1.1"
+                        >
+                            <g
+                                id="Icons"
+                                stroke="none"
+                                stroke-width="1"
+                                fill="none"
+                                fill-rule="evenodd"
+                            >
+                                <g
+                                    id="Color-"
+                                    transform="translate(-200.000000, -160.000000)"
+                                    fill="#4460A0"
+                                ></g>
+                            </g>
+                        </svg>
+                        <span>Continue with Facebook</span>
+                    </button>
+                </div>
+            </section>
+
+            <aside class="hidden lg:flex bg-indigo-100 text-center flex-1">
+                <div
+                    class="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat"
+                >
+                    <!-- Add your image here -->
+                    <img
+                        src="./assets/dumb.png"
+                        alt="it will make you dumber"
+                        class="w-full h-auto object-contain"
+                    />
+                </div>
+            </aside>
+        </main>
+    </body>
+</html>
